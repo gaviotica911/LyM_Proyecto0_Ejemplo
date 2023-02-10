@@ -1,7 +1,7 @@
 ROBOT_R
 VARS a,b,c
 PROCS
-procedimiento [|p,d| 
+procedimiento [ |p,d| 
 assignTo: 5, a;
 goto: 3,2;
 goto: 3,a;
@@ -90,7 +90,7 @@ repeat: 4 [goto: 3,a];
 repeat: a [goto: 3,a];
 nop:
 ]
-procedimiento2 [||
+procedimiento2 [ ||
 assignTo: 5, a;
 goto: 3,2;
 goto: 3,a;
@@ -234,7 +234,7 @@ while: canJumpToThe: 3, left do: [goto: 3,a];
 while: canJumpToThe: 3, back do: [goto: 3,a];
 while: not: canJumpToThe: 3, back do: [goto: 3,a];
 repeat: 4 [goto: 3,a];
-repeat: a [goto: 3,a]];
+repeat: a [goto: 3,a];
 if: facing: south then: [goto: 3,a] else: [goto: 3,a];
 if: facing: east then: [goto: 3,a] else: [goto: 3,a];
 if: facing: west then: [goto: 3,a] else: [goto: 3,a];
